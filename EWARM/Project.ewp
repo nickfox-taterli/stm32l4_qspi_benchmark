@@ -214,7 +214,7 @@
                 <debug>1</debug>
                 <option>
                     <name>CCOptimizationNoSizeConstraints</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CCDefines</name>
@@ -341,6 +341,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$/../Core/Inc</state>
+                    <state>$PROJ_DIR$/../Drivers/QSPI_Flash/Inc</state>
                     <state>$PROJ_DIR$/../Drivers/STM32L4xx_HAL_Driver/Inc</state>
                     <state>$PROJ_DIR$/../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy</state>
                     <state>$PROJ_DIR$/../Drivers/CMSIS/Device/ST/STM32L4xx/Include</state>
@@ -365,7 +366,7 @@
                 <option>
                     <name>CCOptStrategy</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
@@ -418,7 +419,7 @@
                 <option>
                     <name>CCOptStrategySlave</name>
                     <version>0</version>
-                    <state>1</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>CCGuardCalls</name>
@@ -986,7 +987,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state></state>
+                    <state>Project_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -1095,6 +1096,12 @@
             <name>CMSIS</name>
             <file>
                 <name>$PROJ_DIR$\..\Core\Src\system_stm32l4xx.c</name>
+            </file>
+        </group>
+        <group>
+            <name>QSPI_Flash</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\QSPI_Flash\Src\qspi.c</name>
             </file>
         </group>
         <group>
